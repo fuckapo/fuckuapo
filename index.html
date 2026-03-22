@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Apo Fuck Page</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 50px;
+    }
+    img {
+      width: 95vw; 
+    height: 90vh;    
+    object-fit: cover;
+
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="pic.webp" alt="image">
+
+  <div>
+    <button onclick="fuckyou()">🖕</button>
+    <p id="count">0 Likes</p>
+  </div>
+
+  <script>
+    let fucks = 0;
+
+    function fuckyou() {
+      fucks++;
+      document.getElementById("count").innerText = fucks + " fucks";
+    }
+  </script>
+
+</body>
+</html>
